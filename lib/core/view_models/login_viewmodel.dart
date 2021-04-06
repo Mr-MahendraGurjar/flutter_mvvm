@@ -13,7 +13,7 @@ import 'package:flutter_mvvm_provider/utils/response_message.dart';
 import 'package:provider/provider.dart';
 
 class LoginViewModel extends BaseViewModel {
-  String email = 'vitor.iassia@innovareti.com.br';
+  String email = 'mahendra@gmail.com';
   String password = 'password';
   AccountService _accountService = AccountService();
   StorageService _service = locator<StorageService>();

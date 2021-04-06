@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_mvvm_provider/screens/home/home_screen.dart';
 import 'package:flutter_mvvm_provider/screens/login/login_screen.dart';
@@ -52,11 +51,11 @@ class DrawerMenu extends StatelessWidget {
                         color: Colors.white,
                       ),
                       accountName: Text(
-                        'userModel.name',
+                        'Mahendra',
                         style: TextStyle(color: Colors.black),
                       ),
                       accountEmail: Text(
-                        'userModel.email',
+                        'mahendra@gmail.com',
                         style: TextStyle(color: Colors.black),
                       ),
                       currentAccountPicture: CircleAvatar(
@@ -79,7 +78,7 @@ class DrawerMenu extends StatelessWidget {
                     ),
                     DrawerItem(
                       icon: Icons.person,
-                      text: 'Perfil',
+                      text: 'Profile',
                       onTap: () {
                         if (ModalRoute.of(context).settings.name ==
                             'profile_screen') {
@@ -95,7 +94,7 @@ class DrawerMenu extends StatelessWidget {
               ),
               DrawerItem(
                 icon: Icons.exit_to_app,
-                text: 'Sair',
+                text: 'Log Out',
                 onTap: () {
                   Navigator.pop(context);
 

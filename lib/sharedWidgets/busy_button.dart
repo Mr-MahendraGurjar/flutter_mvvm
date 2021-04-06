@@ -11,7 +11,7 @@ class BusyButton extends StatelessWidget {
   BusyButton({
     Key key,
     VoidCallback onPressed,
-    String text = 'ENTRAR',
+    String text = 'Log In',
     bool isBusy = false,
     bool isOutline = true,
   })  : _onPressed = onPressed,

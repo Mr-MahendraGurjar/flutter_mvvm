@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_mvvm_provider/constant.dart';
 import 'package:flutter_mvvm_provider/core/view_models/login_viewmodel.dart';
@@ -21,7 +19,7 @@ class LoginForm extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   TextFormField(
-                    initialValue: 'vitor.iassia@innovareti.com.br',
+                    initialValue: 'mahendra@gmail.com',
                     style: TextStyle(
                       color: Theme.of(context).accentColor,
                     ),
@@ -33,7 +31,7 @@ class LoginForm extends StatelessWidget {
                     autovalidateMode: AutovalidateMode.disabled,
                     autocorrect: false,
                     validator: (value) =>
-                        (value.isEmpty) ? "E-mail inválido" : null,
+                        (value.isEmpty) ? "E-mail invalid" : null,
                   ),
                   SizedBox(
                     height: 16,
@@ -44,14 +42,14 @@ class LoginForm extends StatelessWidget {
                       color: Theme.of(context).accentColor,
                     ),
                     cursorColor: Theme.of(context).accentColor,
-                    decoration: inputDecotationBlack(labelText: 'Senha'),
+                    decoration: inputDecotationBlack(labelText: 'Password'),
                     obscureText: true,
                     autocorrect: false,
                     onChanged: (value) {
                       model.password = value;
                     },
                     validator: (value) =>
-                        (value.isEmpty) ? "Senha inválida" : null,
+                        (value.isEmpty) ? "password invalid" : null,
                   ),
                   Padding(
                     padding: EdgeInsets.symmetric(vertical: 16),
